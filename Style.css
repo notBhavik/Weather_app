@@ -1,22 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
-     padding: 0px;
-     margin: 0px;
-     box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 .mdiv{
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("https://www.bpmcdn.com/f/files/vernon/import/2019-08/18312178_web1_Mainly-sunny.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
+
 .container{
-    height: 350px;
-    width: 250px;
-    box-shadow: 0px 0px 20px grey;
-    border-radius: 30px;
-    padding: 20px;
+	height: 450px;
+	width: 300px;
+	box-shadow: 0px 0px 20px grey;
+	border-radius: 30px;
+	padding: 20px;
+	border-radius: 30px;
+	padding: 20px;
+	background: transparent;
+	backdrop-filter: blur(20px);
+	
+}
+
+.heading{
+	color: rgb(2, 26, 34);
+/*	font-family: Arial Black;*/
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+input[type="text"]{
+	height: 30px;
+	width: 240px;
+	padding-left: 10px;
+	outline: none;
+	font-weight: bolder;
+}
+.component {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+
+.btn{
+	margin-top: 10px;
+	margin-left: 90px;
+	
+}
+.btn button{
+	height: 35px;
+	width: 90px;
+	font-size: 20px;
+
+}
+
+.btn button:hover{
+	background-color: royalblue;
+	color:  white;
+	cursor: pointer;
+}
+#city{
+ 	color: orangered;
+/* 	font-family: Arial Black;*/
+ 	font-size: 25px;
+}
+
+.measurement{
+/*	font-family:sans-serif;*/
+	font-weight: bolder;
+	font-size: 16px;
+ }
+ 
+.headings{
+	color: rgb(2, 26, 34);
+/*	font-family: Arial Black;*/
+	font-size: 16px;
 }
