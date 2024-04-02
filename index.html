@@ -1,25 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Weather App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<script type="text/javascript" src="Script.js"></script>
+	<title>Weather App</title>
+ </head>
+ <body>
+	<div class="mdiv">
+		<div class="container">
+			<h3 class="heading">WEATHER APP</h3>
+			<form>
+			<div class="component">
+				<div>
+					<input type="text" name="city" id="city_name" placeholder="Enter a City" autofocus>
+				</div>
+			</div><br>
+			<div align="center" style="margin-top: -10px;">
 
-    <link rel="stylesheet" type="text/css" href="Style.css">
-    <script type="text/javascript" src="Script.js"></script>
-</head>
-<body>
-    <div class="mdiv">
-        <div class="container">
-            <h3>WEATHER FORECAST</h3>
-            <form>
-                <input type="text" name="city" id="city_name" placeholder="Enter a city">
-                <button type="button" onclick="fetchCity()"><img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-21.png" alt="search icon"
-                height="20px"> </button>
-            </form>
-            
-        </div>
-    </div>
-     
+				<img src="cloud.svg" alt=" weathericon" height="130px">
+
+			</div>
+			<div align="center" style="margin-top:-5px"> 
+				<span id="city">City Name</span> 
+				<br>
+				<span class="measurement" id="temp">0°C</span>
+			</div>
+			<div align="center" style="margin-top: 15px">
+				<table width="100%" cellpadding="20px" >
+					<tr align="center">
+						<td>
+							<h5 class="headings">Wind Speed</h5>
+							<span class="measurement" id="wind_speed"><img src=""> 0 km/hr</span>
+						</td>
+						<td>
+							<h4 class="headings">Humidity</h4>
+							<span class="measurement" id="humidity">0 %</span>
+						</td>
+
+					</tr>
+				</table>
+			</div>
+			<div class="btn">
+				<button type="button" class="srch_btn" onclick ="fetchCity()">Fetch</button>
+			</div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
